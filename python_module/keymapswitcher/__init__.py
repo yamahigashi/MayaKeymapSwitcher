@@ -28,7 +28,7 @@ def get_keymaps():
 def get_main_window():
     from keymapswitcher.vendor.Qt import QtWidgets
 
-    for obj in QtWidgets.qApp.topLevelWidgets():
+    for obj in QtWidgets.QApplication.topLevelWidgets():
         if obj.objectName() == 'MayaWindow':
             return obj
 
